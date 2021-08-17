@@ -18,7 +18,7 @@ if($gender=="female"){ //Cinsiyet kadinsa
   }else if($femaleBMR==$guess){
     echo "Tahmin değerine eşit";  
   }else{
-    echo "Tahmin değerinden yüksek";  
+    echo "Tahmin değerinden büyük";  
   }
  }
  
@@ -31,7 +31,7 @@ if($gender=="female"){ //Cinsiyet kadinsa
   }else if($maleBMR==$guess){
     echo "Tahmin değerine eşit";  
   }else{
-    echo "Tahmin değerinden yüksek";  
+    echo "Tahmin değerinden büyük";  
   }
 }
 
