@@ -11,27 +11,27 @@ $guess=(int)$guess; //Tip donusumu
 
 if($gender=="female"){ //Cinsiyet kadinsa
   $femaleBMR=447.593 + (9.247 * $weight) + (3.098 * $height)-(4.330 * $age);//Kadin gunluk BMR ihtiyaci hesaplanir
-  echo " Kadın Günlük BMR İhtiyacı " . $femaleBMR."\n"; //BMR ekrana bastirilir.
+  echo "BMR: " . $femaleBMR."\n"; //BMR ekrana bastirilir.
   //Tahmin degeri ile karsilastirma
   if($femaleBMR < $guess){
-    echo "Hesaplanan BMR değeri tahmin edilen değerden düşüktür.";
+    echo "Tahmin değerinden düşük";
   }else if($femaleBMR==$guess){
-    echo "Hesaplanan BMR değeri tahmin edilen değere eşittir.";  
+    echo "Tahmin değerine eşit";  
   }else{
-    echo "Hesaplanan BMR değeri tahmin edilen değerden yüksektir.";  
+    echo "Tahmin değerinden yüksek";  
   }
  }
  
  else{ //Cinsiyet erkekse
   $maleBMR=88.362 + (13.397 * $weight) + (4.799 * $height)-(5.677 * $age);//Erkek gunluk BMR ihtiyaci hesaplanir
-  echo "Erkek Günlük BMR İhtiyacı: ".$maleBMR."\n" ; //BMR ekrana bastirilir
+  echo "BMR: ".$maleBMR."\n" ; //BMR ekrana bastirilir
   //Tahmin degeri ile karsilastirma
   if($maleBMR<$guess){
-    echo "Hesaplanan BMR değeri tahmin edilen değerden düşüktür.";
+    echo "Tahmin değerinden düşük";
   }else if($maleBMR==$guess){
-    echo "Hesaplanan BMR değeri tahmin edilen değere eşittir.";  
+    echo "Tahmin değerine eşit";  
   }else{
-    echo "Hesaplanan BMR değeri tahmin edilen değerden yüksektir.";  
+    echo "Tahmin değerinden yüksek";  
   }
 }
 
